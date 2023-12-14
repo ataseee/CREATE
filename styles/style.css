@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #151515;
+  box-sizing: border-box;
+}
+
+.light {
+  z-index: -1;
+  filter: blur(700px);
+  position: fixed;
+  width: 1000px;
+  height: 1000px;
+  top: -80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+.prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.prompt .create {
+  font-size: 300px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: -4%;
+}
+.prompt .generate-form {
+  display: flex;
+  margin-bottom: 15px;
+}
+.prompt .generate-form .prompt-input {
+  width: 500px;
+  height: 75px;
+  border-radius: 20px 0 0 20px;
+  padding: 0 0 0 25px;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.3607843137);
+  border: 0px;
+  color: #fff;
+  margin-right: 5px;
+  box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.2509803922);
+}
+.prompt .generate-form .prompt-input::-moz-placeholder {
+  color: #cbcbcb;
+  font-weight: 500;
+}
+.prompt .generate-form .prompt-input::placeholder {
+  color: #cbcbcb;
+  font-weight: 500;
+}
+.prompt .generate-form .img-quantity {
+  width: 75px;
+  height: 75px;
+  border-radius: 0 20px 20px 0;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.3607843137);
+  border: 0px;
+  color: #cbcbcb;
+  text-align: center;
+  box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.2509803922);
+  font-family: "Space Grotesk", sans-serif;
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.prompt .generate-form .img-quantity:focus {
+  outline: 0;
+}
+.prompt .extra-info {
+  color: #828282;
+  font-size: 20px;
+  font-weight: 300;
+}/*# sourceMappingURL=style.css.map */

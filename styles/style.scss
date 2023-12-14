@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #151515;
+    box-sizing: border-box;
+}
+
+.light {
+    z-index: -1;
+    filter: blur(700px);
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    top: -80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    background-color: #333333;
+}
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .create {
+        font-size: 300px;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: -4%;
+    }
+
+    .generate-form {
+        display: flex;
+        margin-bottom: 15px;
+
+        .prompt-input {
+            width: 500px;
+            height: 75px;
+            border-radius: 20px 0 0 20px;
+            padding: 0 0 0 25px;
+            font-size: 25px;
+            background-color: #ffffff5c;
+            border: 0px;
+            color: #fff;
+            margin-right: 5px;
+            box-shadow: inset 0px 0px 22px 10px #00000040;
+        }
+
+        .prompt-input::placeholder {
+            color: #cbcbcb;
+            font-weight: 500;
+        }
+
+        .img-quantity {
+            width: 75px;
+            height: 75px;
+            border-radius: 0 20px 20px 0;
+            font-size: 25px;
+            background-color: #ffffff5c;
+            border: 0px;
+            color: #cbcbcb;
+            text-align: center;
+            box-shadow: inset 0px 0px 22px 10px #00000040;
+            font-family: 'Space Grotesk', sans-serif;
+            position: relative;
+            appearance: none;
+            // background-image: url("../svg/down-arrow-svgrepo-com.svg");
+            // background-size: 20px;
+            // background-position: center 45px;
+            // background-repeat: no-repeat;
+        }
+
+        .img-quantity:focus {
+            outline: 0;
+        }
+    }
+
+    .extra-info {
+        color: #828282;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
